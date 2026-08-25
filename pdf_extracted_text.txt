@@ -1,0 +1,222 @@
+--- PAGE 1 ---
+SAMPLE QUESTIONNAIRE ARCHITECTURE  The Coaching Ripple Effect From Leadership Maturity to Ecosystem Impact  A research instrument designed to examine how coaching builds leadership maturity and how its impact travels across teams, organizations, stakeholders, and the wider ecosystem. 
+Research Instrument & Questionnaire Architecture NHRD  x  xMonks Version 1.0    
+
+--- PAGE 2 ---
+NHRD x xMonks  |  Proposed Flagship Research QUESTIONNAIRE ARCHITECTURE 
+The Coaching Ripple Effect Research Instrument | Confidential Draft Version 1.0 Page 2 
+Executive Summary The attached concept note frames this study as a mixed-methods inquiry into how organizational coaching contributes to leadership maturity and how its effects may extend across teams, organizational culture, business outcomes, stakeholder relationships, and the wider ecosystem. Rather than asking only whether coaching "works," the study seeks to understand how far coaching impact travels, through whom, and under what conditions it becomes sustainable. It also adopts an inclusive sampling approach that does not assume prior coaching exposure, distinguishing between structured coaching users, selective or past users, prospective users, non-users, and respondents who are unsure of their organization's coaching practices. This framing is well supported by the broader evidence base. Organizational coaching has consistently demonstrated positive effects at the individual level through peer-reviewed meta-analyses, including improvements in performance, skills, well-being, work attitudes, coping, and goal-directed self-regulation. A 2014 meta-analysis of 18 organizational studies reported positive effects across all five outcome categories, with effect sizes ranging from 0.43 to 0.74. A subsequent meta-analysis restricted to 37 randomized controlled trials also found a statistically significant moderate overall effect for workplace coaching. Additional meta-analytic evidence suggests particularly strong effects on behavioural change and relationship outcomes, making coaching especially relevant for a study that seeks to understand how its influence extends beyond individual leaders into broader organizational and ecosystem outcomes. Systematic reviews also caution that future coaching research requires stronger methodological rigor, greater contextual sensitivity, and more robust approaches to outcome measurement. The implications for questionnaire design are clear. This cannot be a generic HR survey or a simple "Did coaching work?" questionnaire. Instead, it must function as a consulting-grade organizational research instrument that combines measurement with intelligent routing. The instrument should distinguish between structured coaching users, selective or past users, prospective users, non-users, and respondents who are unsure of coaching exposure; capture both observable outcomes and barriers to adoption; and examine ripple effects across leadership, teams, organizations, stakeholders, ecosystems, and society. It should also incorporate branching logic, common organizational maturity measures, user-specific outcome measures, non-user readiness and barrier measures, and an embedded qualitative pathway through follow-up interviews and case studies. Accordingly, the proposed research instrument comprises a concise, executive-friendly online survey for CHROs and senior People Leaders, complemented by a semi-structured interview guide to provide qualitative depth. The primary respondent should ideally be one senior representative per organization, typically the CHRO, Chief People Officer, Head of Learning & Development, Head of Talent, or Organizational Development leader with enterprise-wide visibility. This approach is consistent with established organizational coaching research, including the ICF/HCI Coaching Culture studies, which similarly rely on HR, Talent, and Learning leaders to evaluate organizational coaching practices, access, integration, and impact. In practical terms, the questionnaire is intentionally designed to be methodologically neutral and analytically robust. It asks respondents about the extent to which coaching has contributed to outcomes rather than claiming it has caused them, includes response options such as "Not Sure," "Not Applicable," and "Too Early to Assess," and measures both perceived outcomes and organizational measurement practices rather than encouraging exaggerated claims. The wording remains concise, neutral, and free from leading or double-barrelled questions, enabling more reliable data collection across organizations with varying levels of coaching maturity. The resulting instrument is designed to be analytically rigorous, ethically appropriate, and practical for a senior HR audience. With an estimated completion time of 10–12 minutes, it supports descriptive and comparative statistics, reliability analysis, correlation, regression, and thematic qualitative analysis, fully aligned with the methodology proposed in the concept note.  Primary audience Survey duration Research routes Qualitative depth CHROs, CPOs, CLOs, L&D/OD and CXO sponsors 10-12 minutes Coaching users and prospective/non-users 45-60 minute semi-structured interviews   
+
+--- PAGE 3 ---
+NHRD x xMonks  |  Proposed Flagship Research QUESTIONNAIRE ARCHITECTURE 
+The Coaching Ripple Effect Research Instrument | Confidential Draft Version 1.0 Page 3 
+Research Logic and Hypothesis-To-Instrument Map The concept note’s central question is: How does organizational coaching build leadership maturity and create wider ripple effects across the organization and its ecosystem?  The framework is explicitly non-linear: coaching intervention may lead to self-awareness and clarity, behavioural change, leadership maturity, team and culture outcomes, and stakeholder/ecosystem impact, but the study must also identify where the chain weakens or stops.  The scope of inquiry spans individual leadership, teams, organizations, stakeholders, business ecosystems, and community/society. The survey and interview guide therefore need to measure both vertical depth and horizontal spread.  A rigorous instrument for this study should be built around a set of derived working hypothesis. These are not stated verbatim in the concept note, but they are the clearest testable interpretations of its framework. Derived working hypothesis What it means analytically Best respondent(s) Best instrument component  H1  Coaching maturity hypothesis  Organizations with more structured, embedded coaching practices will report stronger leadership-maturity outcomes than selective, informal, prospective, or non-user organizations. 
+ CHRO, CLO, Head L&D  Survey + interview 
+ H2  Integration hypothesis  The more coaching is integrated into talent, succession, transitions, and manager development, the stronger the reported team and organizational ripple effects. 
+ CHRO, Head L&D, CLO  Survey + interview 
+ H3  Measurement discipline hypothesis  Organizations that define metrics and review coaching outcomes more systematically will report stronger confidence in ROI and sustainability.  CHRO, CLO, Head L&D  Survey + interview 
+ H4  Leadership-mediation hypothesis 
+ Leadership-maturity outcomes are likely to mediate the relationship between coaching exposure and later team/organizational outcomes.  CHRO, Business Leader Survey 
+ H5  Cross-boundary hypothesis  Ripple effects are stronger at the individual/team level than at the stakeholder/ecosystem level unless reinforced by culture, sponsor alignment, and systems integration. 
+ CHRO, Business Leader  Survey + interview 
+ H6  Barrier/readiness hypothesis  Non-users and prospective users will report distinct barriers, substitute interventions, and evidence needs that predict organizational readiness for future adoption. 
+ CHRO, Head L&D  Survey + interview 
+ H7  Context hypothesis  Industry, size, ownership, and region will shape both adoption patterns and the type of outcomes organizations report.  All segments  Survey 
+ This hypothesis set fits both the concept note and the external research literature. Meta-analytic evidence supports asking about leadership-level and performance-related outcomes, including skills, affective outcomes, performance, work attitudes, coping, and self-regulation.  Research on leader coaching and managerial coaching also supports team learning, innovation effectiveness, task performance, organizational learning culture, and engagement as plausible downstream domains. At the same time, executive-coaching reviews emphasize the importance of methodological rigor and context sensitivity, which is why the questionnaire below distinguishes observable contribution from perceived potential and uses routing for users and non-users rather than blending them into a single outcome battery.  
+
+--- PAGE 4 ---
+NHRD x xMonks  |  Proposed Flagship Research QUESTIONNAIRE ARCHITECTURE 
+The Coaching Ripple Effect Research Instrument | Confidential Draft Version 1.0 Page 4 
+Respondent Architecture The respondent architecture should also be deliberate. The concept note names CHRO/CXO interviews and an organizational survey across varied coaching maturity levels.  • For organizational analysis, the primary survey respondent should ideally be the CHRO/CPO or equivalent People Leader.  • CLOs and Heads of L&D can complete the survey where they own coaching design and measurement.  • Business Leaders are most useful in the interview stream because they can comment on strategy execution, customer, partner, supplier, and ecosystem effects more directly than HR can.   Respondent segment Best used for Priority constructs CHRO / CPO / HR Head Primary organizational survey respondent  Coaching maturity, integration into talent systems, succession, retention, culture, governance, ROI confidence 
+CLO / Chief Talent / Learning Head Survey or interview  Program design, modalities, target populations, internal/external coaching mix, measurement methods 
+Head L&D / OD / Leadership Development Survey or interview  Adoption barriers, leadership outcomes, manager-as-coach, learning integration, readiness 
+Business Leader / CXO sponsor Primarily interview  Team effects, execution, stakeholder outcomes, business value, where ripple strengthens or stops 
+ From a question-design perspective, the instrument should follow established survey-writing principles: ask one concept at a time, keep wording short and understandable, avoid biasing terms, use logical ordering, and ensure response options are mutually exclusive and reasonably exhaustive, including neutral or “don’t know” options where appropriate.  Because this is an executive audience, the online survey should ideally be shown one question per page, with short prompts and light guidance only where needed.    
+
+--- PAGE 5 ---
+NHRD x xMonks  |  Proposed Flagship Research QUESTIONNAIRE ARCHITECTURE 
+The Coaching Ripple Effect Research Instrument | Confidential Draft Version 1.0 Page 5 
+Structured Questionnaire Set Screening and consent The concept note promises aggregate analysis, confidentiality unless explicit permission is granted for attribution, and research integrity.  The consent language should therefore be short, clear, voluntary, and explicitly research-only. That aligns with the principles that participation in research is voluntary and respondent information should not be used for non-research purposes without consent.  Recommended estimated completion times Instrument Estimated time Screening + consent 1 minute Online survey 10–12 minutes In-depth interview 45–60 minutes Consent text for survey 1. Purpose: You are invited to participate in the NHRD xMonks research study, The Coaching Ripple Effect: From Leadership Maturity to Ecosystem Impact. The study examines how coaching contributes to leadership maturity and whether its impact extends to teams, organizational culture, business performance, stakeholder relationships, and the wider ecosystem. 2. What participation involves: If you agree, you will complete a short survey that takes about 10–12 minutes. Some participants may also be invited for a follow-up interview. 3. Voluntary participation: Your participation is entirely voluntary. You may skip any question and may stop at any time without penalty. 4. Confidentiality: Responses will be analyzed in aggregate. Your name and organization will not be attributed in any publication or case study unless explicit permission is obtained separately. 5. Use of data: Data will be used for research purposes only and not for sales, solicitation, or performance evaluation of any individual. 6. Questions: If you have any questions about the study, please contact the Research Team – Preeti Verma, preeti.verma@xmonks.com, (+91) 8860789723.  7. By selecting “Yes, I consent,” you confirm that you understand the above and agree to participate.   
+
+--- PAGE 6 ---
+NHRD x xMonks  |  Proposed Flagship Research QUESTIONNAIRE ARCHITECTURE 
+The Coaching Ripple Effect Research Instrument | Confidential Draft Version 1.0 Page 6 
+Survey Structure   Column name Purpose Question ID Unique identifier Section Screening / Core / User route / Non-User route / Open text 
+Respondent segment Primary intended respondent Variable name Short analysis variable Question text Exact wording Response type Single select / multi-select / Likert / open text 
+Response options Full coded options Required Yes / No Skip logic Route rules Analysis priority High / Medium / Low Notes Wording or implementation notes 
+     
+
+--- PAGE 7 ---
+NHRD x xMonks  |  Proposed Flagship Research QUESTIONNAIRE ARCHITECTURE 
+The Coaching Ripple Effect Research Instrument | Confidential Draft Version 1.0 Page 7 
+Analysis design and codebook Recommended sample sizes and analytic approach The concept note targets approximately 150 organizations and explicitly includes both survey and qualitative inquiry. A practical design is to aim for 150 usable organizational survey responses, while ensuring one primary organizational record per organization. Where two respondents from the same organization reply, choose one primary respondent for organization-level analysis and retain the second as supplemental data for triangulation.  For interviews, a target of 24–32 interviews is strong enough to capture sector and maturity variation without becoming unwieldy.   Component Recommended completes Notes Survey: CHRO/CPO/HR Heads 50–70 Preferred primary respondents Survey: CLO / Chief Talent 20–30 Useful where coaching design is centralized Survey: Head L&D / OD / Leadership Development 30–40 Important for operational detail and measurement practices Survey: Business Leader sponsors 10–20 Optional in survey; more valuable in interviews Interviews: CHRO/CPO 8–10 Gives strategic coverage Interviews: CLO / Talent leaders 4–6 Program design, governance, metrics Interviews: Head L&D / OD 6–8 Capability architecture, substitutes, adoption barriers Interviews: Business Leaders / CXO sponsors 6–8 Operational and stakeholder outcomes 
+  The analysis should prioritize a small set of high-value constructs. The most analytically important items are the coaching exposure category, coaching stage, integration level, measurement discipline, the six ripple outcome domains, overall value relative to investment, barriers, and the three open-text items.  These support descriptive benchmarking, sector comparisons, maturity comparisons, and modest multivariate analysis.  The concept note explicitly anticipates descriptive and comparative statistics, correlation, regression where appropriate, reliability analysis, and thematic analysis; the instrument below is designed to support exactly those outputs.      
+
+--- PAGE 8 ---
+NHRD x xMonks  |  Proposed Flagship Research QUESTIONNAIRE ARCHITECTURE 
+The Coaching Ripple Effect Research Instrument | Confidential Draft Version 1.0 Page 8 
+Screening Questions  ID Question Response type Response options Skip logic S1 Which of the following best describes your current role? Single select CHRO/CPO/HR Head;  CLO/Talent Head;  Head of L&D/OD/Leadership Development;  Business Leader/CXO sponsor;  External coach/consultant;  Other 
+If “External coach/consultant” or unrelated “Other,” end survey and request referral 
+S2 Are you sufficiently familiar with your organization’s leadership development and coaching practices to answer organization-level questions? Single select Yes;  Partly;  No If “No,” end survey and request referral 
+S3 Are you completing this survey on behalf of one organization only? Single select Yes;  No If “No,” ask respondent to answer for primary organization only 
+S4 Do you consent to participate in this research under the terms described below? Single select Yes, I consent; No, I do not consent If “No,” end survey 
+   
+
+--- PAGE 9 ---
+NHRD x xMonks  |  Proposed Flagship Research QUESTIONNAIRE ARCHITECTURE 
+The Coaching Ripple Effect Research Instrument | Confidential Draft Version 1.0 Page 9 
+Optional follow-up permissions ID Question Response type Options C1 May the Research Team contact you for a follow-up interview? Single select Yes;  No 
+C2 May the Research Team contact you if your organization is shortlisted for a confidential case study? Single select Yes;  No 
+C3 If case-study inclusion is considered later, would you require separate organizational approval before any attribution? Single select Yes;  No;  Not sure 
+   
+
+--- PAGE 10 ---
+NHRD x xMonks  |  Proposed Flagship Research QUESTIONNAIRE ARCHITECTURE 
+The Coaching Ripple Effect Research Instrument | Confidential Draft Version 1.0 Page 10 
+Short online survey for CHROs and People Leaders • The survey below is designed so that coaching users see 24 items and prospective/non-users/unsure respondents see 20 items.  • That keeps the experience short while preserving analytic depth. It also follows the concept note’s inclusive routing model.      
+
+--- PAGE 11 ---
+NHRD x xMonks  |  Proposed Flagship Research QUESTIONNAIRE ARCHITECTURE 
+The Coaching Ripple Effect Research Instrument | Confidential Draft Version 1.0 Page 11 
+Core items shown to all respondents QID Variable Question text Response type Response options Skip logic Analysis priority Q01 industry Which industry best describes your organization’s primary business? Single select IT/Technology; BFSI; Manufacturing/Industrial; Pharma/Healthcare;  FMCG/Consumer; Consulting/Professional Services; Retail/E-commerce; Hospitality/Travel/Aviation; Energy/Utilities/Infrastructure; Telecom/Media; Automotive; PSU/Government enterprise;  Other 
+All High 
+Q02 Org size Approximately how many employees does your organization have in India? Single select Fewer than 500;  500–1,999;  2,000–9,999;  10,000–49,999;  50,000 or more;  Not sure 
+All High 
+Q03 ownership Which ownership structure best describes your organization? Single select Indian private;  Indian listed/public;  MNC subsidiary;  Family-owned/promoter-led; PSU/Government;  Not-for-profit/social enterprise;  Other 
+All High 
+Q04 Region hq Where is your organization’s India head office or primary operating HQ located? Single select North;  South;  West;  East;  Central;  Multiple India hubs/no single HQ; Outside India;  Not sure 
+All Medium 
+Q05 Resp role Which role best describes you? Single select CHRO/CPO/HR Head;  CLO/Talent Head;  Head L&D/OD/Leadership Development;  Business Leader/CXO sponsor;  Other senior people leader 
+All High 
+Q06 coach exposure Which statement best describes your organization’s current use of coaching? Single select Structured coaching user; Selective/past/informal user; Prospective user considering coaching; Non-user with no active plans;  Unsure Route key. If first two options, go to user route. If last three, go to non-user route. 
+High 
+
+--- PAGE 12 ---
+NHRD x xMonks  |  Proposed Flagship Research QUESTIONNAIRE ARCHITECTURE 
+The Coaching Ripple Effect Research Instrument | Confidential Draft Version 1.0 Page 12 
+QID Variable Question text Response type Response options Skip logic Analysis priority Q10 coach stage Which statement best describes your organization’s current coaching stage? Single select No formal coaching exposure;  Isolated or ad hoc use;  Emerging but not standardized;  Formal program in some parts of the organization;  Scaled across leadership segments; Embedded into talent, culture, and business processes;  Not sure 
+All High 
+Q11 adoption barriers What are the main barriers to wider adoption or deeper embedding of coaching in your organization? Please select up to five. Multi-select Budget constraints;  Limited senior sponsorship;  Hard to measure impact/ROI;  Lack of internal capability; Limited manager time;  Confidentiality concerns;  Coaching seen as remedial or elite-only;  Unclear provider quality;  Competing interventions already in place;  Unclear business case;  Cultural resistance;  Not applicable;  Other (specify) 
+All High 
+Q12 coach integration To what extent is coaching integrated into leadership, talent, or people processes in your organization? Likert 1–5 1 Not at all integrated;  2 Limited pilot-level integration;  3 Integrated into some processes; 4 Integrated into several processes;  5 Well integrated into talent and business processes;  99 Not sure 
+All High 
+Q13 impact measurement To what extent does your organization measure coaching using defined indicators, review mechanisms, or outcome data? Likert 1–5 1 Not measured;  2 Measured informally;  3 Some indicators used;  4 Structured review and metrics in place;  5 Well-defined metrics and periodic review;  99 Not sure 
+All High 
+ 
+
+--- PAGE 13 ---
+NHRD x xMonks  |  Proposed Flagship Research QUESTIONNAIRE ARCHITECTURE 
+The Coaching Ripple Effect Research Instrument | Confidential Draft Version 1.0 Page 13 
+User route shown only to structured, selective, past, or informal users QID Variable Question text Response type Response options Skip logic Analysis priority Q07U Coach modalities Which coaching modalities are currently used in your organization? Please select all that apply. Multi-select External executive/leadership coaching;  Internal coach pool;  Team coaching;  Group coaching;  Manager-as-coach; Transition/onboarding coaching;  Coaching linked to succession/high potentials; Informal or case-by-case coaching only;  Other 
+If coach_exposure = structured/selective user High 
+Q08U Coach coverage Which employee groups are currently covered by coaching? Please select all that apply. Multi-select CXO/Board;  Enterprise leaders;  Senior managers;  People managers;  High potentials;  First-time managers;  Critical talent;  Project teams; Frontline/plant/customer-facing leaders;  Other 
+User route only High 
+Q09U Coach years For approximately how long has coaching been used in your organization? Single select Less than 1 year;  1–2 years;  3–5 years;  More than 5 years; Not sure User route only Medium 
+Q14U Out individual Based on what you have observed, to what extent has coaching contributed to leadership-maturity outcomes such as self-awareness, emotional regulation, judgment, accountability, and clarity? 
+Likert  1–5 1 No observable contribution;  2 Small;  3 Moderate;  4 Strong;  5 Very strong;   99 Too early / not able to assess 
+User route only High 
+Q15U Out team To what extent has coaching contributed to team outcomes such as trust, psychological safety, collaboration, inclusion, learning, or resilience? 
+Likert  1–5 Same scale as Q14U User route only High 
+
+--- PAGE 14 ---
+NHRD x xMonks  |  Proposed Flagship Research QUESTIONNAIRE ARCHITECTURE 
+The Coaching Ripple Effect Research Instrument | Confidential Draft Version 1.0 Page 14 
+QID Variable Question text Response type Response options Skip logic Analysis priority Q16U Out org To what extent has coaching contributed to organizational outcomes such as succession readiness, leadership pipeline strength, engagement, retention, performance culture, or organizational health? 
+Likert  1–5 Same scale as Q14U User route only High 
+Q17U Out business To what extent has coaching contributed to business outcomes such as strategic execution, agility, innovation, decision quality, or productivity? 
+Likert  1–5 Same scale as Q14U User route only High 
+Q18U Out stakeholder To what extent has coaching contributed to stakeholder outcomes such as customer experience, supplier/partner relationships, cross-boundary collaboration, negotiation quality, or stakeholder trust? 
+Likert  1–5 Same scale as Q14U User route only High 
+Q19U Out ecosystem To what extent has coaching contributed to wider ecosystem or community outcomes such as responsible leadership, mentoring, volunteering, social responsibility, industry capability, or community participation? 
+Likert  1–5 Same scale as Q14U User route only Medium 
+Q20U Roi value Overall, how would you describe the value created by coaching relative to the time, effort, and money invested? 
+Likert  1–5 1 Much lower than investment;  2 Slightly lower;  3 Broadly commensurate;  4 Higher than investment;  5 Significantly higher;   99 Too early / not able to assess 
+User route only High 
+
+--- PAGE 15 ---
+NHRD x xMonks  |  Proposed Flagship Research QUESTIONNAIRE ARCHITECTURE 
+The Coaching Ripple Effect Research Instrument | Confidential Draft Version 1.0 Page 15 
+QID Variable Question text Response type Response options Skip logic Analysis priority Q21U Roi metrics Which indicators does your organization use, or most trust, when judging coaching value? Please select up to five. 
+Multi-select 360/behaviour change feedback;  Promotion or transition success;  Leadership pipeline/succession readiness;  Retention of key talent; Engagement scores;  Team climate / psychological safety; Performance/productivity indicators; Innovation/change adoption; Customer/stakeholder feedback;  Ethical decision quality / risk outcomes;  No formal indicators;  Other 
+User route only High 
+     
+
+--- PAGE 16 ---
+NHRD x xMonks  |  Proposed Flagship Research QUESTIONNAIRE ARCHITECTURE 
+The Coaching Ripple Effect Research Instrument | Confidential Draft Version 1.0 Page 16 
+Non-user, prospective-user, and unsure route 
+QID Variable Question text Response type Response options Skip logic Analysis priority 
+Q07N Alt interventions Which approaches does your organization currently use instead of, or in place of, formal coaching? Please select all that apply. Multi-select Leadership training;  Mentoring;  Manager capability programmes; Assessment/development centres;  Action learning / projects / job rotations;  OD / facilitation / consulting; None in particular;  Not sure;  Other 
+If coach_exposure = prospective/non-user/unsure High 
+Q08N Potential coverage If coaching were to be used in your organization, which groups would be the most likely starting point? Please select up to three. Multi-select CXO/Board;  Senior leaders;  People managers;  High potentials;  First-time managers;  Critical talent;  Project teams; Frontline/customer-facing leaders; Unsure; Other 
+Non-user route only Medium 
+Q09N Adoption horizon Which statement best describes your organization’s likely coaching horizon? Single select Likely within 12 months;  Possibly within 12–24 months;  No active plans;  Unsure Non-user route only Medium 
+Q14N Evidence needed What evidence would matter most if your organization were evaluating coaching? Please select up to three. Multi-select Leadership behaviour change; Team climate / trust / collaboration;  Succession readiness;  Retention / engagement;  Business execution / productivity; Customer or stakeholder outcomes;  Ethical conduct / decision quality; External benchmarks / case studies;  ROI methodology;  Other 
+Non-user route only High 
+
+--- PAGE 17 ---
+NHRD x xMonks  |  Proposed Flagship Research QUESTIONNAIRE ARCHITECTURE 
+The Coaching Ripple Effect Research Instrument | Confidential Draft Version 1.0 Page 17 
+QID Variable Question text Response type Response options Skip logic Analysis priority 
+Q15N Adoption conditions What conditions would most increase the likelihood of coaching adoption in your organization? Please select up to three. Multi-select Stronger business case;  Senior sponsorship;  Budget availability;  Better measurement framework; Trusted coaching providers; Internal capability;  Clear target population;  Cultural readiness;  Strong peer benchmarks;  Other 
+Non-user route only High 
+Q16N Adoption likelihood How likely is your organization to consider a more formal coaching approach over the next 24 months? Likert  1–5 1 Very unlikely;  2 Unlikely;  3 Unsure;  4 Likely;  5 Very likely 
+Non-user route only High 
+Q17N Perceived value If your organization were to adopt coaching, where do you believe it would be most likely to add value first? Single select Individual leadership maturity;  Team effectiveness; Organizational culture/talent pipeline;  Business execution;  Stakeholder relationships;  Too early to say;  Other 
+Non-user route only Medium 
+    
+
+--- PAGE 18 ---
+NHRD x xMonks  |  Proposed Flagship Research QUESTIONNAIRE ARCHITECTURE 
+The Coaching Ripple Effect Research Instrument | Confidential Draft Version 1.0 Page 18 
+Open-text items shown to all respondents  
+QID Variable Question text Response type Word limit suggestion Skip logic Analysis priority 
+Q22 Open key outcome In your view, what is the single most significant outcome that coaching has created or could create in your organization? Open text 50–120 words All High 
+Q23 Open ripple example Please describe one example where coaching impact travelled beyond the individual leader or where it stopped before travelling further. Open text 60–150 words All High 
+Q24 Open conditions risks What conditions, enablers, or risks most influence whether coaching impact becomes sustainable in your organization? Open text 60–150 words All High 
+    
+
+--- PAGE 19 ---
+NHRD x xMonks  |  Proposed Flagship Research QUESTIONNAIRE ARCHITECTURE 
+The Coaching Ripple Effect Research Instrument | Confidential Draft Version 1.0 Page 19 
+Why this survey design is methodologically strong This design is intentionally neutral. It uses “contributed to” rather than “caused,” avoids emotionally loaded terms such as “successful” or “transformational,” and includes “not sure,” “not applicable,” and “too early to assess” options. That avoid pushing respondents toward one side, to ask one concept at a time, and to use careful, exhaustive response options; it also respects the concept note’s explicit commitment to studying users, selective users, prospective users, non-users, and unsure respondents without assuming prior exposure.  The survey also maps cleanly onto the evidence base. Individual and organization-level items are justified by coaching meta-analyses on skills, affect, performance, work attitudes, coping, and self-regulation. Team and team-learning items are supported by research connecting leader coaching with team learning, innovation effectiveness, and task performance. The coaching-culture and measurement items reflect existing organizational coaching-culture research that emphasizes program design, manager coaching capability, internal coaching capability, and impact evaluation as hallmarks of stronger coaching cultures.  
+
+--- PAGE 20 ---
+NHRD x xMonks  |  Proposed Flagship Research QUESTIONNAIRE ARCHITECTURE 
+The Coaching Ripple Effect Research Instrument | Confidential Draft Version 1.0 Page 20 
+In-depth interview guide for qualitative inquiry The qualitative guide should not repeat the survey mechanically. Its purpose is to understand context, mechanisms, boundary conditions, and examples of ripple effects that are hard to capture in fixed-response form.  The concept note explicitly calls for CHRO/CXO interviews, sponsor perspectives, case studies, and examination of where ripple effects weaken or stop.  The interview guide below is therefore semi-structured and should be used flexibly.  Interview guide structure  Use the following columns in the Interview Guide tab: Column name Purpose Question ID Unique identifier Core question Main question wording Probe prompts Follow-up prompts Best respondent segment CHRO / CLO / Head L&D / Business Leader    
+
+--- PAGE 21 ---
+NHRD x xMonks  |  Proposed Flagship Research QUESTIONNAIRE ARCHITECTURE 
+The Coaching Ripple Effect Research Instrument | Confidential Draft Version 1.0 Page 21 
+Semi-structured interview guide  ID Semi-structured question Probes Best respondent I01 How does your organization currently think about coaching within the broader leadership and talent agenda? What counts as coaching in your context? How is it different from mentoring, training, facilitation, or performance management? CHRO, CLO, Head L&D 
+I02 How has your organization’s use of coaching evolved over time? What triggered adoption, expansion, pause, or resistance?  What was the business context?  (could be growth, transformation, succession, merger, culture change, crisis?) 
+CHRO, CLO 
+I03 Who is coaching primarily intended for in your organization, and why those groups? CXOs, senior leaders, high potentials, first-time managers, frontline leaders?  What was the inclusion logic?  What groups remain excluded? CHRO, Head L&D 
+I04 When coaching works well in your organization, what changes do you actually see in leaders? Self-awareness, judgment, courage, accountability, systems thinking, executive presence, relational behaviour, ethical choices?  What evidence makes you say that? 
+CHRO, Business Leader 
+I05 How, if at all, do those leader-level changes travel into teams? Trust, psychological safety, delegation, conflict handling, inclusion, learning, resilience, innovation, performance? Where does the effect become visible? Business Leader, CHRO 
+I06 What organizational outcomes do you believe coaching influences most strongly, if at all? Succession, pipeline, retention, engagement, performance culture, agility, strategic execution, change adoption?  Over what time horizon? CHRO, CLO 
+I07 Have you seen coaching influence customer, supplier, partner, or stakeholder relationships? Better listening, negotiation, cross-boundary collaboration, responsible decision-making, stakeholder trust? Concrete examples? Business Leader, CHRO 
+
+--- PAGE 22 ---
+NHRD x xMonks  |  Proposed Flagship Research QUESTIONNAIRE ARCHITECTURE 
+The Coaching Ripple Effect Research Instrument | Confidential Draft Version 1.0 Page 22 
+ID Semi-structured question Probes Best respondent I08 How does coaching create ripple effects beyond the organization itself? Mentoring behaviours, community participation, volunteering, inclusive leadership, industry capability building, ecosystem partnerships?  Or is that too indirect to claim? 
+CHRO, Business Leader 
+I09 Where does the ripple effect tend to weaken, stop, or fail in your context? Insufficient sponsor support, poor coach fit, confidentiality concerns, weak manager follow-through, elite-only access, lack of process integration, weak measurement, culture mismatch? 
+All 
+I10 How do you judge whether coaching is worth the investment? What counts as evidence for your leadership team or board?  Hard metrics, proxy indicators, qualitative feedback, case examples, 360 data, transition success? 
+CHRO, CLO 
+I11 If you had to design a practical measurement framework for coaching impact, what would be essential? Leading indicators, lagging indicators, qualitative evidence, segmentation, governance cadence, who owns measurement? CHRO, Head L&D, CLO 
+I12 What advice would you offer other organizations about embedding coaching so that its impact becomes sustainable rather than episodic? What would you start, stop, continue? Would you be open to a future confidential case study or validation call? All 
+     
+
+--- PAGE 23 ---
+NHRD x xMonks  |  Proposed Flagship Research QUESTIONNAIRE ARCHITECTURE 
+The Coaching Ripple Effect Research Instrument | Confidential Draft Version 1.0 Page 23 
+Segment-specific probes  Segment Additional probes CHRO / CPO How does coaching connect with succession planning, leadership pipeline, culture, and retention?  What role does the board or CEO play?  CLO / Talent / Learning leader How do you select modalities, coach pools, or target populations?  What is standardized and what remains bespoke? 
+Head L&D / OD What substitutes are used when coaching is not feasible?  What capability-building sits around coaching, manager-as-coach, feedback, mentoring, assessments? 
+Business Leader / CXO sponsor  What business or operating outcomes matter most to you?  What convinced you, or would convince you, that coaching matters beyond HR?  
+ 
+

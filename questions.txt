@@ -1,0 +1,666 @@
+Core items shown to all respondents
+QID Variable Question text Response
+
+type Response options Skip logic Analysis
+priority
+
+Q01 industry Which industry best describes
+your organization’s primary
+business?
+
+Single select IT/Technology; BFSI;
+Manufacturing/Industrial;
+Pharma/Healthcare;
+FMCG/Consumer;
+Consulting/Professional Services;
+Retail/E-commerce;
+Hospitality/Travel/Aviation;
+Energy/Utilities/Infrastructure;
+Telecom/Media; Automotive;
+PSU/Government enterprise;
+Other
+
+All High
+
+Q02 Org size Approximately how many
+employees does your organization
+have in India?
+
+Single select Fewer than 500;
+500–1,999;
+2,000–9,999;
+10,000–49,999;
+50,000 or more;
+Not sure
+
+All High
+
+Q03 ownership Which ownership structure best
+describes your organization?
+
+Single select Indian private;
+Indian listed/public;
+MNC subsidiary;
+Family-owned/promoter-led;
+PSU/Government;
+Not-for-profit/social enterprise;
+Other
+
+All High
+
+Q04 Region hq Where is your organization’s India
+head office or primary operating
+HQ located?
+
+Single select North;
+South;
+West;
+East;
+Central;
+Multiple India hubs/no single HQ;
+Outside India;
+Not sure
+
+All Medium
+
+Q05 Resp role Which role best describes you? Single select CHRO/CPO/HR Head;
+CLO/Talent Head;
+Head L&D/OD/Leadership
+Development;
+Business Leader/CXO sponsor;
+Other senior people leader
+
+All High
+
+Q06 coach exposure Which statement best describes
+your organization’s current use of
+coaching?
+
+Single select Structured coaching user;
+Selective/past/informal user;
+Prospective user considering coaching;
+Non-user with no active plans;
+Unsure
+
+Route key. If
+first two
+options, go to
+user route. If
+last three, go
+to non-user
+route.
+
+High
+
+NHRD x xMonks | Proposed Flagship Research QUESTIONNAIRE ARCHITECTURE
+
+The Coaching Ripple Effect Research Instrument | Confidential Draft Version 1.0 Page 12
+QID Variable Question text Response
+
+type Response options Skip logic Analysis
+priority
+
+Q10 coach stage Which statement best describes
+your organization’s current
+coaching stage?
+
+Single select No formal coaching exposure;
+Isolated or ad hoc use;
+Emerging but not standardized;
+Formal program in some parts of the
+organization;
+Scaled across leadership segments;
+Embedded into talent, culture, and
+business processes;
+Not sure
+
+All High
+
+Q11 adoption
+barriers
+
+What are the main barriers to wider
+adoption or deeper embedding of
+coaching in your organization?
+Please select up to five.
+
+Multi-select Budget constraints;
+Limited senior sponsorship;
+Hard to measure impact/ROI;
+Lack of internal capability; Limited
+manager time;
+Confidentiality concerns;
+
+Coaching seen as remedial or elite-
+only;
+
+Unclear provider quality;
+Competing interventions already in
+place;
+Unclear business case;
+Cultural resistance;
+Not applicable;
+Other (specify)
+
+All High
+
+Q12 coach
+integration
+
+To what extent is coaching
+integrated into leadership, talent,
+or people processes in your
+organization?
+
+Likert 1–5 1 Not at all integrated;
+2 Limited pilot-level integration;
+3 Integrated into some processes;
+4 Integrated into several processes;
+5 Well integrated into talent and
+business processes;
+99 Not sure
+
+All High
+
+Q13 impact
+measurement
+
+To what extent does your
+organization measure coaching
+using defined indicators, review
+mechanisms, or outcome data?
+
+Likert 1–5 1 Not measured;
+2 Measured informally;
+3 Some indicators used;
+4 Structured review and metrics in
+place;
+5 Well-defined metrics and periodic
+review;
+99 Not sure
+
+All High
+
+NHRD x xMonks | Proposed Flagship Research QUESTIONNAIRE ARCHITECTURE
+
+The Coaching Ripple Effect Research Instrument | Confidential Draft Version 1.0 Page 13
+User route shown only to structured, selective, past, or informal users
+
+QID Variable Question text Response
+
+type Response options Skip logic Analysis
+priority
+
+Q07U Coach
+modalities
+Which coaching
+modalities are
+currently used in your
+organization? Please
+select all that apply.
+
+Multi-select External executive/leadership
+
+coaching;
+Internal coach pool;
+Team coaching;
+Group coaching;
+Manager-as-coach;
+Transition/onboarding
+coaching;
+Coaching linked to
+succession/high potentials;
+Informal or case-by-case
+coaching only;
+Other
+
+If coach_exposure =
+structured/selective
+user
+
+High
+
+Q08U Coach
+coverage
+Which employee
+groups are currently
+covered by coaching?
+Please select all that
+apply.
+
+Multi-select CXO/Board;
+Enterprise leaders;
+Senior managers;
+People managers;
+High potentials;
+First-time managers;
+Critical talent;
+Project teams;
+
+Frontline/plant/customer-
+facing leaders;
+
+Other
+
+User route only High
+
+Q09U Coach years For approximately
+how long has
+coaching been used in
+your organization?
+
+Single select Less than 1 year;
+1–2 years;
+3–5 years;
+More than 5 years; Not sure
+
+User route only Medium
+
+Q14U Out
+individual
+Based on what you
+have observed, to
+what extent has
+coaching contributed
+to leadership-maturity
+outcomes such as
+self-awareness,
+emotional regulation,
+judgment,
+accountability, and
+clarity?
+
+Likert
+1–5
+
+1 No observable contribution;
+2 Small;
+3 Moderate;
+4 Strong;
+5 Very strong;
+99 Too early / not able to
+assess
+
+User route only High
+
+Q15U Out team To what extent has
+coaching contributed
+to team outcomes
+such as trust,
+psychological safety,
+collaboration,
+inclusion, learning, or
+resilience?
+
+Likert
+1–5
+
+Same scale as Q14U User route only High
+
+NHRD x xMonks | Proposed Flagship Research QUESTIONNAIRE ARCHITECTURE
+
+The Coaching Ripple Effect Research Instrument | Confidential Draft Version 1.0 Page 14
+
+QID Variable Question text Response
+
+type Response options Skip logic Analysis
+priority
+
+Q16U Out org To what extent has
+coaching contributed
+to organizational
+outcomes such as
+succession readiness,
+leadership pipeline
+strength, engagement,
+retention,
+performance culture,
+or organizational
+health?
+
+Likert
+1–5
+
+Same scale as Q14U User route only High
+
+Q17U Out
+business
+To what extent has
+coaching contributed
+to business outcomes
+such as strategic
+execution, agility,
+innovation, decision
+quality, or
+productivity?
+
+Likert
+1–5
+
+Same scale as Q14U User route only High
+
+Q18U Out
+stakeholder
+To what extent has
+coaching contributed
+to stakeholder
+outcomes such as
+customer experience,
+supplier/partner
+
+relationships, cross-
+boundary
+
+collaboration,
+negotiation quality, or
+stakeholder trust?
+Likert
+1–5
+
+Same scale as Q14U User route only High
+
+Q19U Out
+ecosystem
+To what extent has
+coaching contributed
+to wider ecosystem or
+community outcomes
+such as responsible
+leadership,
+mentoring,
+volunteering, social
+responsibility,
+industry capability, or
+community
+participation?
+
+Likert
+1–5
+
+Same scale as Q14U User route only Medium
+
+Q20U Roi value Overall, how would
+you describe the value
+created by coaching
+relative to the time,
+effort, and money
+invested?
+
+Likert
+1–5
+
+1 Much lower than
+investment;
+2 Slightly lower;
+3 Broadly commensurate;
+4 Higher than investment;
+5 Significantly higher;
+99 Too early / not able to
+assess
+
+User route only High
+
+NHRD x xMonks | Proposed Flagship Research QUESTIONNAIRE ARCHITECTURE
+
+The Coaching Ripple Effect Research Instrument | Confidential Draft Version 1.0 Page 15
+
+QID Variable Question text Response
+
+type Response options Skip logic Analysis
+priority
+
+Q21U Roi metrics Which indicators does
+your organization use,
+or most trust, when
+judging coaching
+value? Please select
+up to five.
+
+Multi-select 360/behaviour change
+feedback;
+Promotion or transition
+success;
+Leadership
+pipeline/succession
+readiness;
+Retention of key talent;
+Engagement scores;
+Team climate / psychological
+safety;
+Performance/productivity
+indicators;
+Innovation/change adoption;
+Customer/stakeholder
+feedback;
+Ethical decision quality / risk
+outcomes;
+No formal indicators;
+Other
+
+User route only High
+
+NHRD x xMonks | Proposed Flagship Research QUESTIONNAIRE ARCHITECTURE
+
+The Coaching Ripple Effect Research Instrument | Confidential Draft Version 1.0 Page 16
+Non-user, prospective-user, and unsure route
+
+QID Variable Question text Response
+
+type Response options Skip logic Analysis
+priority
+
+Q07N Alt
+interventions
+
+Which approaches does
+your organization currently
+use instead of, or in place of,
+formal coaching? Please
+select all that apply.
+
+Multi-select Leadership training;
+Mentoring;
+Manager capability programmes;
+Assessment/development
+centres;
+Action learning / projects / job
+rotations;
+OD / facilitation / consulting;
+None in particular;
+Not sure;
+Other
+
+If coach_exposure
+
+= prospective/non-
+user/unsure
+
+High
+
+Q08N Potential
+coverage
+
+If coaching were to be used
+in your organization, which
+groups would be the most
+likely starting point? Please
+select up to three.
+
+Multi-select CXO/Board;
+Senior leaders;
+People managers;
+High potentials;
+First-time managers;
+Critical talent;
+Project teams;
+Frontline/customer-facing
+leaders;
+Unsure; Other
+
+Non-user route
+only
+
+Medium
+
+Q09N Adoption
+horizon
+
+Which statement best
+describes your
+organization’s likely
+coaching horizon?
+
+Single select Likely within 12 months;
+Possibly within 12–24 months;
+No active plans;
+Unsure
+
+Non-user route
+only
+
+Medium
+
+Q14N Evidence
+needed
+
+What evidence would matter
+most if your organization
+were evaluating coaching?
+Please select up to three.
+
+Multi-select Leadership behaviour change;
+Team climate / trust /
+collaboration;
+Succession readiness;
+Retention / engagement;
+Business execution / productivity;
+Customer or stakeholder
+outcomes;
+Ethical conduct / decision quality;
+External benchmarks / case
+studies;
+ROI methodology;
+Other
+
+Non-user route
+only
+
+High
+
+NHRD x xMonks | Proposed Flagship Research QUESTIONNAIRE ARCHITECTURE
+
+The Coaching Ripple Effect Research Instrument | Confidential Draft Version 1.0 Page 17
+QID Variable Question text Response
+
+type Response options Skip logic Analysis
+priority
+
+Q15N Adoption
+conditions
+
+What conditions would most
+increase the likelihood of
+coaching adoption in your
+organization? Please select
+up to three.
+
+Multi-select Stronger business case;
+Senior sponsorship;
+Budget availability;
+Better measurement framework;
+Trusted coaching providers;
+Internal capability;
+Clear target population;
+Cultural readiness;
+Strong peer benchmarks;
+Other
+
+Non-user route
+only
+
+High
+
+Q16N Adoption
+likelihood
+
+How likely is your
+organization to consider a
+more formal coaching
+approach over the next 24
+months?
+
+Likert
+1–5
+1 Very unlikely;
+2 Unlikely;
+3 Unsure;
+4 Likely;
+5 Very likely
+
+Non-user route
+only
+
+High
+
+Q17N Perceived
+value
+
+If your organization were to
+adopt coaching, where do
+you believe it would be most
+likely to add value first?
+
+Single select Individual leadership maturity;
+Team effectiveness;
+Organizational culture/talent
+pipeline;
+Business execution;
+Stakeholder relationships;
+Too early to say;
+Other
+
+Non-user route
+only
+
+Medium
+
+NHRD x xMonks | Proposed Flagship Research QUESTIONNAIRE ARCHITECTURE
+
+The Coaching Ripple Effect Research Instrument | Confidential Draft Version 1.0 Page 18
+Open-text items shown to all respondents
+
+QID Variable Question text Response
+
+type Word limit suggestion Skip logic Analysis
+priority
+
+Q22 Open key
+outcome
+
+In your view, what is the single most
+significant outcome that coaching has
+created or could create in your
+organization?
+
+Open text 50–120 words All High
+
+Q23 Open ripple
+example
+
+Please describe one example where
+coaching impact travelled beyond the
+individual leader or where it stopped
+before travelling further.
+
+Open text 60–150 words All High
+
+Q24 Open
+conditions
+risks
+
+What conditions, enablers, or risks
+most influence whether coaching
+impact becomes sustainable in your
+organization?
+
+Open text 60–150 words All High

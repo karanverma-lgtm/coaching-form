@@ -1,0 +1,17 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Allow public creation and reading of survey responses
+    match /survey_responses/{responseId} {
+      allow create: if true;
+      allow read: if true;
+      allow update, delete: if false;
+    }
+
+    // Default catch-all for other collections
+    match /{document=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}
