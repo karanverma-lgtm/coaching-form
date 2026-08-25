@@ -29,6 +29,10 @@ import {
   ShieldCheck,
   AlertCircle,
   Loader2,
+  ChevronDown,
+  CheckSquare,
+  Square,
+  Check,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -46,12 +50,15 @@ export default function AdminDashboard() {
   const [exposureFilter, setExposureFilter] = useState<string>("all");
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedResponse, setSelectedResponse] = useState<SurveySubmission | null>(null);
+  const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
+  const [showExportMenu, setShowExportMenu] = useState(false);
 
   const loadData = async () => {
     setLoading(true);
     try {
       const data = await fetchSurveyResponses();
       setResponses(data);
+      setSelectedIds(new Set());
     } catch (err) {
       console.error(err);
     } finally {
@@ -94,6 +101,7 @@ export default function AdminDashboard() {
     try {
       await logOut();
       setResponses([]);
+      setSelectedIds(new Set());
       setEmailInput("");
       setPasswordInput("");
     } catch (err) {
@@ -101,21 +109,45 @@ export default function AdminDashboard() {
     }
   };
 
-  const handleExportCSV = () => {
-    const csvContent = exportResponsesToCSV(filteredResponses);
+  const downloadCSVData = (subs: SurveySubmission[], filePrefix: string) => {
+    if (subs.length === 0) return;
+    const csvContent = exportResponsesToCSV(subs);
     if (!csvContent) return;
 
     const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
     const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
+    const dateStr = new Date().toISOString().slice(0, 10);
     link.setAttribute("href", url);
-    link.setAttribute(
-      "download",
-      `coaching_ripple_survey_responses_${new Date().toISOString().slice(0, 10)}.csv`
-    );
+    link.setAttribute("download", `${filePrefix}_${dateStr}.csv`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+    setShowExportMenu(false);
+  };
+
+  // Export All Responses
+  const handleExportAll = () => {
+    downloadCSVData(responses, `coaching_survey_all_${responses.length}`);
+  };
+
+  // Export Filtered Responses
+  const handleExportFiltered = () => {
+    downloadCSVData(filteredResponses, `coaching_survey_filtered_${filteredResponses.length}`);
+  };
+
+  // Export Selected Responses
+  const handleExportSelected = () => {
+    const selectedSubs = responses.filter((r) => r.id && selectedIds.has(r.id));
+    downloadCSVData(selectedSubs, `coaching_survey_selected_${selectedSubs.length}`);
+  };
+
+  // Export Individual Response
+  const handleExportIndividual = (sub: SurveySubmission) => {
+    const safeName = (sub.respondentName || sub.id || "response")
+      .replace(/[^a-zA-Z0-9_-]/g, "_")
+      .slice(0, 30);
+    downloadCSVData([sub], `coaching_survey_single_${safeName}`);
   };
 
   const filteredResponses = responses.filter((r) => {
@@ -132,6 +164,47 @@ export default function AdminDashboard() {
     }
     return true;
   });
+
+  // Toggle selection for a single row
+  const toggleSelectRow = (id: string) => {
+    setSelectedIds((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) {
+        next.delete(id);
+      } else {
+        next.add(id);
+      }
+      return next;
+    });
+  };
+
+  // Toggle select all currently filtered rows
+  const toggleSelectAllFiltered = () => {
+    const allFilteredSelected = filteredResponses.every((r) => r.id && selectedIds.has(r.id));
+    if (allFilteredSelected) {
+      // Deselect filtered
+      setSelectedIds((prev) => {
+        const next = new Set(prev);
+        filteredResponses.forEach((r) => {
+          if (r.id) next.delete(r.id);
+        });
+        return next;
+      });
+    } else {
+      // Select all filtered
+      setSelectedIds((prev) => {
+        const next = new Set(prev);
+        filteredResponses.forEach((r) => {
+          if (r.id) next.add(r.id);
+        });
+        return next;
+      });
+    }
+  };
+
+  const clearSelection = () => {
+    setSelectedIds(new Set());
+  };
 
   const totalCount = responses.length;
   const userRouteCount = responses.filter((r) => r.exposure === "user").length;
@@ -290,14 +363,77 @@ export default function AdminDashboard() {
               <span>Refresh</span>
             </button>
 
-            <button
-              onClick={handleExportCSV}
-              disabled={filteredResponses.length === 0}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-orange-600 hover:bg-orange-500 text-xs font-semibold text-white shadow-lg shadow-orange-600/20 transition-all disabled:opacity-50"
-            >
-              <Download className="w-3.5 h-3.5" />
-              <span className="hidden sm:inline">Export CSV</span> ({filteredResponses.length})
-            </button>
+            {/* Export Dropdown Menu */}
+            <div className="relative">
+              <button
+                onClick={() => setShowExportMenu(!showExportMenu)}
+                disabled={responses.length === 0}
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-orange-600 hover:bg-orange-500 text-xs font-semibold text-white shadow-lg shadow-orange-600/20 transition-all disabled:opacity-50"
+              >
+                <Download className="w-3.5 h-3.5" />
+                <span>Export CSV</span>
+                <ChevronDown className="w-3 h-3 ml-0.5 opacity-80" />
+              </button>
+
+              {showExportMenu && (
+                <>
+                  <div
+                    className="fixed inset-0 z-40"
+                    onClick={() => setShowExportMenu(false)}
+                  />
+                  <div className="absolute right-0 mt-2 w-64 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-2xl py-2 z-50 animate-fadeIn">
+                    <div className="px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-zinc-400">
+                      CSV Export Options
+                    </div>
+
+                    <button
+                      type="button"
+                      onClick={handleExportAll}
+                      disabled={responses.length === 0}
+                      className="w-full text-left px-3 py-2.5 text-xs text-zinc-800 dark:text-zinc-200 hover:bg-orange-50 dark:hover:bg-zinc-800/80 hover:text-orange-950 dark:hover:text-white flex items-center justify-between transition-colors"
+                    >
+                      <div className="flex flex-col">
+                        <span className="font-semibold">Export All Records</span>
+                        <span className="text-[11px] text-zinc-500">Full database export</span>
+                      </div>
+                      <span className="px-2 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 text-[10px] font-mono text-zinc-600 dark:text-zinc-300 font-semibold">
+                        {responses.length}
+                      </span>
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={handleExportFiltered}
+                      disabled={filteredResponses.length === 0}
+                      className="w-full text-left px-3 py-2.5 text-xs text-zinc-800 dark:text-zinc-200 hover:bg-orange-50 dark:hover:bg-zinc-800/80 hover:text-orange-950 dark:hover:text-white flex items-center justify-between transition-colors border-t border-zinc-100 dark:border-zinc-800/50"
+                    >
+                      <div className="flex flex-col">
+                        <span className="font-semibold">Export Filtered Results</span>
+                        <span className="text-[11px] text-zinc-500">Matches current search & role</span>
+                      </div>
+                      <span className="px-2 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 text-[10px] font-mono text-zinc-600 dark:text-zinc-300 font-semibold">
+                        {filteredResponses.length}
+                      </span>
+                    </button>
+
+                    <button
+                      type="button"
+                      onClick={handleExportSelected}
+                      disabled={selectedIds.size === 0}
+                      className="w-full text-left px-3 py-2.5 text-xs text-zinc-800 dark:text-zinc-200 hover:bg-orange-50 dark:hover:bg-zinc-800/80 hover:text-orange-950 dark:hover:text-white flex items-center justify-between transition-colors border-t border-zinc-100 dark:border-zinc-800/50 disabled:opacity-40 disabled:hover:bg-transparent"
+                    >
+                      <div className="flex flex-col">
+                        <span className="font-semibold">Export Selected Items</span>
+                        <span className="text-[11px] text-zinc-500">Checked table rows</span>
+                      </div>
+                      <span className={`px-2 py-0.5 rounded text-[10px] font-mono font-bold ${selectedIds.size > 0 ? "bg-orange-100 text-orange-700 dark:bg-orange-950/60 dark:text-orange-300" : "bg-zinc-100 dark:bg-zinc-800 text-zinc-400"}`}>
+                        {selectedIds.size}
+                      </span>
+                    </button>
+                  </div>
+                </>
+              )}
+            </div>
 
             <button
               onClick={handleAdminLogout}
@@ -347,6 +483,39 @@ export default function AdminDashboard() {
             <p className="text-[11px] text-zinc-500 mt-1">Prospective / Non-user route</p>
           </div>
         </div>
+
+        {/* Dynamic Multiple Selection Batch Action Bar */}
+        {selectedIds.size > 0 && (
+          <div className="p-3.5 px-5 rounded-2xl bg-orange-50/90 dark:bg-orange-950/40 border border-orange-200 dark:border-orange-800/60 shadow-md flex flex-col sm:flex-row items-center justify-between gap-3 animate-fadeIn">
+            <div className="flex items-center gap-3">
+              <div className="w-6 h-6 rounded-lg bg-orange-600 text-white font-mono font-bold text-xs flex items-center justify-center shadow-xs">
+                {selectedIds.size}
+              </div>
+              <span className="text-xs font-medium text-orange-950 dark:text-orange-200">
+                <strong>{selectedIds.size}</strong> response{selectedIds.size > 1 ? "s" : ""} selected for batch export
+              </span>
+            </div>
+
+            <div className="flex items-center gap-2 w-full sm:w-auto justify-end">
+              <button
+                type="button"
+                onClick={handleExportSelected}
+                className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-orange-600 hover:bg-orange-500 text-white text-xs font-semibold shadow-xs transition-colors"
+              >
+                <Download className="w-3.5 h-3.5" />
+                <span>Download CSV ({selectedIds.size})</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={clearSelection}
+                className="px-3 py-1.5 rounded-xl bg-white dark:bg-zinc-900 border border-orange-200 dark:border-orange-900/60 hover:bg-orange-100/50 dark:hover:bg-zinc-800 text-orange-900 dark:text-orange-300 text-xs font-medium transition-colors"
+              >
+                Clear Selection
+              </button>
+            </div>
+          </div>
+        )}
 
         {/* Filter Controls */}
         <div className="p-4 rounded-2xl bg-white dark:bg-zinc-900/40 border border-zinc-200 dark:border-zinc-800/80 shadow-sm flex flex-col sm:flex-row gap-3 items-center justify-between">
@@ -411,6 +580,15 @@ export default function AdminDashboard() {
               <table className="w-full text-left text-xs">
                 <thead className="bg-zinc-100/80 dark:bg-zinc-900/80 border-b border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 uppercase tracking-wider font-semibold">
                   <tr>
+                    <th className="w-10 px-4 py-3.5 text-center">
+                      <input
+                        type="checkbox"
+                        checked={filteredResponses.length > 0 && filteredResponses.every((r) => r.id && selectedIds.has(r.id))}
+                        onChange={toggleSelectAllFiltered}
+                        className="w-4 h-4 rounded text-orange-600 focus:ring-orange-500 border-zinc-300 dark:border-zinc-700 cursor-pointer accent-orange-600"
+                        title="Select or deselect all filtered"
+                      />
+                    </th>
                     <th className="px-4 py-3.5">Participant</th>
                     <th className="px-4 py-3.5">Work Email</th>
                     <th className="px-4 py-3.5">Designation Role</th>
@@ -421,45 +599,73 @@ export default function AdminDashboard() {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-zinc-200 dark:divide-zinc-800/60 text-zinc-700 dark:text-zinc-300">
-                  {filteredResponses.map((res) => (
-                    <tr key={res.id} className="hover:bg-zinc-50 dark:hover:bg-zinc-850/50 transition-colors">
-                      <td className="px-4 py-3.5 font-medium text-zinc-900 dark:text-white max-w-xs truncate">
-                        {res.respondentName || "—"}
-                      </td>
-                      <td className="px-4 py-3.5 font-mono text-zinc-600 dark:text-zinc-400 max-w-xs truncate">
-                        {res.respondentEmail || "—"}
-                      </td>
-                      <td className="px-4 py-3.5 text-zinc-800 dark:text-zinc-200 max-w-xs truncate">
-                        {res.role}
-                      </td>
-                      <td className="px-4 py-3.5">
-                        <span
-                          className={`px-2 py-0.5 rounded-full text-[10px] font-semibold ${
-                            res.exposure === "user"
-                              ? "bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800"
-                              : "bg-amber-100 dark:bg-amber-950 text-amber-800 dark:text-amber-300 border border-amber-300 dark:border-amber-800"
-                          }`}
-                        >
-                          {res.exposure === "user" ? "Active User" : "Non-User"}
-                        </span>
-                      </td>
-                      <td className="px-4 py-3.5 text-zinc-600 dark:text-zinc-400 truncate max-w-xs">
-                        {res.industry || "—"}
-                      </td>
-                      <td className="px-4 py-3.5 font-mono text-zinc-500 dark:text-zinc-400">
-                        {res.submittedAt || "—"}
-                      </td>
-                      <td className="px-4 py-3.5 text-right">
-                        <button
-                          onClick={() => setSelectedResponse(res)}
-                          className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-zinc-100 dark:bg-zinc-800 hover:bg-orange-600 text-zinc-700 dark:text-zinc-300 hover:text-white transition-colors text-[11px]"
-                        >
-                          <Eye className="w-3.5 h-3.5" />
-                          <span>View</span>
-                        </button>
-                      </td>
-                    </tr>
-                  ))}
+                  {filteredResponses.map((res) => {
+                    const isSelected = res.id ? selectedIds.has(res.id) : false;
+
+                    return (
+                      <tr
+                        key={res.id}
+                        className={`transition-colors ${isSelected ? "bg-orange-50/50 dark:bg-orange-950/20" : "hover:bg-zinc-50 dark:hover:bg-zinc-850/50"}`}
+                      >
+                        <td className="w-10 px-4 py-3.5 text-center">
+                          <input
+                            type="checkbox"
+                            checked={isSelected}
+                            onChange={() => res.id && toggleSelectRow(res.id)}
+                            className="w-4 h-4 rounded text-orange-600 focus:ring-orange-500 border-zinc-300 dark:border-zinc-700 cursor-pointer accent-orange-600"
+                          />
+                        </td>
+                        <td className="px-4 py-3.5 font-medium text-zinc-900 dark:text-white max-w-xs truncate">
+                          {res.respondentName || "—"}
+                        </td>
+                        <td className="px-4 py-3.5 font-mono text-zinc-600 dark:text-zinc-400 max-w-xs truncate">
+                          {res.respondentEmail || "—"}
+                        </td>
+                        <td className="px-4 py-3.5 text-zinc-800 dark:text-zinc-200 max-w-xs truncate">
+                          {res.role}
+                        </td>
+                        <td className="px-4 py-3.5">
+                          <span
+                            className={`px-2 py-0.5 rounded-full text-[10px] font-semibold ${
+                              res.exposure === "user"
+                                ? "bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800"
+                                : "bg-amber-100 dark:bg-amber-950 text-amber-800 dark:text-amber-300 border border-amber-300 dark:border-amber-800"
+                            }`}
+                          >
+                            {res.exposure === "user" ? "Active User" : "Non-User"}
+                          </span>
+                        </td>
+                        <td className="px-4 py-3.5 text-zinc-600 dark:text-zinc-400 truncate max-w-xs">
+                          {res.industry || "—"}
+                        </td>
+                        <td className="px-4 py-3.5 font-mono text-zinc-500 dark:text-zinc-400">
+                          {res.submittedAt || "—"}
+                        </td>
+                        <td className="px-4 py-3.5 text-right space-x-1.5 whitespace-nowrap">
+                          {/* Individual Export Button */}
+                          <button
+                            type="button"
+                            onClick={() => handleExportIndividual(res)}
+                            title="Export single response to CSV"
+                            className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-zinc-100 dark:bg-zinc-800 hover:bg-orange-50 dark:hover:bg-orange-950/50 text-zinc-700 dark:text-zinc-300 hover:text-orange-700 dark:hover:text-orange-300 border border-zinc-200 dark:border-zinc-700 hover:border-orange-300 transition-colors text-[11px] font-medium"
+                          >
+                            <Download className="w-3 h-3" />
+                            <span>CSV</span>
+                          </button>
+
+                          {/* View Detail Button */}
+                          <button
+                            type="button"
+                            onClick={() => setSelectedResponse(res)}
+                            className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-zinc-100 dark:bg-zinc-800 hover:bg-orange-600 text-zinc-700 dark:text-zinc-300 hover:text-white transition-colors text-[11px] font-medium"
+                          >
+                            <Eye className="w-3.5 h-3.5" />
+                            <span>View</span>
+                          </button>
+                        </td>
+                      </tr>
+                    );
+                  })}
                 </tbody>
               </table>
             </div>
@@ -476,12 +682,23 @@ export default function AdminDashboard() {
                 <h3 className="font-bold text-lg text-zinc-900 dark:text-white">Survey Submission Details</h3>
                 <p className="text-xs text-zinc-500 dark:text-zinc-400 font-mono">ID: {selectedResponse.id}</p>
               </div>
-              <button
-                onClick={() => setSelectedResponse(null)}
-                className="px-3 py-1.5 rounded-xl bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 text-zinc-700 dark:text-zinc-300 text-xs font-semibold"
-              >
-                Close
-              </button>
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={() => handleExportIndividual(selectedResponse)}
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-orange-600 hover:bg-orange-500 text-white text-xs font-semibold shadow-xs transition-colors"
+                >
+                  <Download className="w-3.5 h-3.5" />
+                  <span>Download CSV</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setSelectedResponse(null)}
+                  className="px-3 py-1.5 rounded-xl bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 text-zinc-700 dark:text-zinc-300 text-xs font-semibold"
+                >
+                  Close
+                </button>
+              </div>
             </div>
 
             <div className="p-6 overflow-y-auto space-y-4 flex-1">
