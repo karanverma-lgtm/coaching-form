@@ -173,9 +173,12 @@ export const SurveyContainer: React.FC = () => {
 
   const handleSkip = () => {
     if (!currentQuestion) return;
-    const updated = { ...answers, [currentQuestion.id]: undefined };
+    const updated = { ...answers };
+    delete updated[currentQuestion.id];
+    delete updated[`${currentQuestion.id}_OTHER`];
     setAnswers(updated);
     try {
+      localStorage.setItem("survey_answers_draft", JSON.stringify(updated));
       sessionStorage.setItem("survey_answers_draft", JSON.stringify(updated));
     } catch {}
     advanceToNext(updated);

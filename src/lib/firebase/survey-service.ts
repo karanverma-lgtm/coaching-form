@@ -30,6 +30,9 @@ export async function submitSurveyResponse(data: {
   }
 
   const { answers, timeSpentSeconds } = data;
+  const savedAnswers = Object.fromEntries(
+    Object.entries(answers).filter(([, value]) => value !== undefined)
+  );
   const roleKey = getSelectedRoleKey(answers);
   const exposure = getExposureType(answers) || "unknown";
 
@@ -57,7 +60,7 @@ export async function submitSurveyResponse(data: {
     industry,
     orgSize,
     timeSpentSeconds,
-    answers,
+    answers: savedAnswers,
     createdAt: serverTimestamp(),
   });
 
